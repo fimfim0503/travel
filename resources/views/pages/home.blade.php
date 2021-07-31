@@ -66,7 +66,7 @@
               style="background-image: url('{{$item->galleries->count() ? Storage::url($item->galleries->first()->image) : '' }}');"
             >
               <div class="travel-country">{{$item->location}}</div>
-              <div class="travel-location">{{$item->testimonialsHeading}}</div>
+              <div class="travel-location">{{$item->title}}</div>
               <div class="travel-button mt-auto">
                 <a href="{{route('detail', $item->slug)}}" class="btn btn-travel-details px-4">
                   View Details
